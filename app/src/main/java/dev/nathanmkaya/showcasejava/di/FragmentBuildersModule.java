@@ -2,16 +2,16 @@ package dev.nathanmkaya.showcasejava.di;
 
 import dagger.Module;
 import dagger.android.ContributesAndroidInjector;
-import dev.nathanmkaya.showcasejava.ui.ui.dashboard.DashboardFragment;
-import dev.nathanmkaya.showcasejava.ui.ui.home.HomeFragment;
-import dev.nathanmkaya.showcasejava.ui.ui.notifications.NotificationsFragment;
+import dev.nathanmkaya.showcasejava.ui.ui.agency.agencyFragment;
+import dev.nathanmkaya.showcasejava.ui.ui.past.PastFragment;
+import dev.nathanmkaya.showcasejava.ui.ui.upcoming.UpcomingFragment;
 
 @Module
 public abstract class FragmentBuildersModule {
     @ContributesAndroidInjector
-    abstract DashboardFragment contributeDashboardFragment();
+    abstract agencyFragment contributeDashboardFragment();
     @ContributesAndroidInjector
-    abstract HomeFragment contributeHomeFragment();
+    abstract PastFragment contributeHomeFragment();
     @ContributesAndroidInjector
-    abstract NotificationsFragment contributeNotificationFragment();
+    abstract UpcomingFragment contributeNotificationFragment();
 }

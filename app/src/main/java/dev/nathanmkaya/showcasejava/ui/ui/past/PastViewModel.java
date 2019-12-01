@@ -1,16 +1,16 @@
-package dev.nathanmkaya.showcasejava.ui.ui.notifications;
+package dev.nathanmkaya.showcasejava.ui.ui.past;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class NotificationsViewModel extends ViewModel {
+public class PastViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public NotificationsViewModel() {
+    public PastViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is notifications fragment");
+        mText.setValue("This is home fragment");
     }
 
     public LiveData<String> getText() {

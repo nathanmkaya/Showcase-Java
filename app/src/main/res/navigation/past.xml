@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/past"
+    app:startDestination="@id/pastFragment">
+
+    <fragment
+        android:id="@+id/pastFragment"
+        android:name="dev.nathanmkaya.spacexlaunchtracker.ui.past.PastFragment"
+        android:label="Past Launch"
+        tools:layout="@layout/past_fragment">
+        <action
+            android:id="@+id/action_pastFragment_to_launchDetailsFragment"
+            app:destination="@id/launchDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/launchDetailsFragment"
+        android:name="dev.nathanmkaya.spacexlaunchtracker.ui.details.LaunchDetailsFragment"
+        android:label="launch_details_fragment"
+        tools:layout="@layout/launch_details_fragment" />
+</navigation>

@@ -1,16 +1,16 @@
-package dev.nathanmkaya.showcasejava.ui.ui.dashboard;
+package dev.nathanmkaya.showcasejava.ui.ui.upcoming;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class DashboardViewModel extends ViewModel {
+public class UpcomingViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public DashboardViewModel() {
+    public UpcomingViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is dashboard fragment");
+        mText.setValue("This is notifications fragment");
     }
 
     public LiveData<String> getText() {

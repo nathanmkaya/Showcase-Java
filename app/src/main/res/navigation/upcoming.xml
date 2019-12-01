@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/upcoming"
+    app:startDestination="@id/upcomingFragment">
+
+    <fragment
+        android:id="@+id/upcomingFragment"
+        android:name="dev.nathanmkaya.spacexlaunchtracker.ui.upcoming.UpcomingFragment"
+        android:label="Upcoming Launches"
+        tools:layout="@layout/upcoming_fragment">
+        <action
+            android:id="@+id/action_upcomingFragment_to_launchDetailsFragment2"
+            app:destination="@id/launchDetailsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/launchDetailsFragment2"
+        android:name="dev.nathanmkaya.spacexlaunchtracker.ui.details.LaunchDetailsFragment"
+        android:label="launch_details_fragment"
+        tools:layout="@layout/launch_details_fragment" />
+</navigation>

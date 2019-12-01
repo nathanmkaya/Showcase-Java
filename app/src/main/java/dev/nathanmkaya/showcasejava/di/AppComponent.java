@@ -13,7 +13,7 @@ import dev.nathanmkaya.showcasejava.Showcase;
 @Component(modules = {
         ViewModelModule.class,
         MainActivityModule.class,
-//        AppModule.class,
+        AppModule.class,
         AndroidInjectionModule.class
 })
 public interface AppComponent {
